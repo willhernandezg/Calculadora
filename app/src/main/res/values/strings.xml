@@ -4,4 +4,10 @@
     <string name="operaciones">Operaciones</string>
     <string name="calcular">CALCULAR</string>
     <string name="borrar">BORRAR</string>
+    <string name="sumar">Sumar</string>
+    <string name="restar">Restar</string>
+    <string name="multiplicar">Multiplicar</string>
+    <string name="dividir">Dividir</string>
+    <string name="primer_numero">Primer Numero</string>
+    <string name="segundo_numero">Segundo Numero</string>
 </resources>
