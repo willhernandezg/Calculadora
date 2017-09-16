@@ -25,12 +25,14 @@
         android:id="@+id/txtNumeroUno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autoText="false"
+        android:editable="false"
         android:ems="10"
         android:hint="@string/primer_numero"
         android:inputType="numberSigned|numberDecimal" />
 
     <EditText
-        android:id="@+id/txtNumeroUno"
+        android:id="@+id/txtNumeroDos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="calcular"
             android:text="@string/calcular" />
 
         <Button
@@ -64,11 +67,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="borrar"
             android:text="@string/borrar" />
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/lblResultado"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
 </LinearLayout>
