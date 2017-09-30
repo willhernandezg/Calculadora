@@ -48,16 +48,16 @@ public class Principal extends AppCompatActivity {
 
         switch (opcion){
             case 0:
-                resultado = num1 + num2;
+                resultado = Metodos.sumar(num1,num2);
                 break;
             case 1:
-                resultado = num1 - num2;
+                resultado = Metodos.restar(num1,num2);
                 break;
             case 2:
-                resultado = num1 * num2;
+                resultado = Metodos.multiplicar(num1,num2);
                 break;
             case 3:
-                resultado = num1 / num2;
+                resultado = Metodos.divir(num1,num2);
                 break;
         }
 
@@ -85,7 +85,7 @@ public class Principal extends AppCompatActivity {
             n2.requestFocus();
             return false;
         }
-        if (Double.parseDouble(n2.getText().toString()) == 0 && opcion == 3){
+        if (Metodos.validarDivison(Double.parseDouble(n2.getText().toString()), opcion)){
             n2.setError(resources.getString(R.string.error_tres));
             n2.requestFocus();
             return false;
